@@ -1,6 +1,6 @@
 ARG APP_VERSION=0.0.1-SNAPSHOT
 
-FROM maven:3-amazoncorretto as build
+FROM maven:3-amazoncorretto-11 as build
 
 WORKDIR /usr/src/app
 COPY src ./src
